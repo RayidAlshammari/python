@@ -1,5 +1,6 @@
 # CSV Profiler
 **Version:** 1.0.0
+
 **Week 1 Project - SDAIA Academy Bootcamp**
 
 A comprehensive CSV analysis tool that provides statistical profiling with both CLI and GUI interfaces.

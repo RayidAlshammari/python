@@ -20,7 +20,6 @@ def profile(
     name: Optional[str] = typer.Option("report", "-n", "--name", help="Report name"),
     show: bool = typer.Option(False, "-s", "--show", help="Show results in terminal"),
 ):
-    """Analyze a CSV file and generate reports."""
     try:
         # Read CSV
         console.print(f"\n📂 Reading: [cyan]{csv_file}[/cyan]")
@@ -84,7 +83,6 @@ def profile(
 
 @app.command()
 def version():
-    """Show version info."""
     console.print("[bold cyan]CSV Profiler[/bold cyan] v1.0.0")
     console.print("SDAIA Academy Bootcamp Project")
 

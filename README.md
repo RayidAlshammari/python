@@ -1,5 +1,5 @@
 # CSV Profiler
-
+**Version:** 1.0.0
 **Week 1 Project - SDAIA Academy Bootcamp**
 
 A comprehensive CSV analysis tool that provides statistical profiling with both CLI and GUI interfaces.
@@ -54,19 +54,30 @@ The project contains 6 core functions in `profiling.py`:
 - Dual interfaces: CLI and Web GUI
 - Export formats: JSON and Markdown
 
+## Installation
+
+**One-time setup** - Install the package in development mode:
+
+```bash
+cd csv-profiler
+pip install -e .
+```
+
+This makes the `csv-profiler` command available anywhere on your system!
+
 ## Usage
 
 ### CLI Commands
 
 ```bash
-# Basic usage
-PYTHONPATH=src python -m csv_profiler.cli profile data/saudi_shopping_with_missing.csv
+# Basic usage - Simple!
+csv-profiler profile data/saudi_shopping_with_missing.csv
 
 # With verbose output (shows summary table)
-PYTHONPATH=src python -m csv_profiler.cli profile data/saudi_shopping_with_missing.csv --verbose
+csv-profiler profile data/saudi_shopping_with_missing.csv --verbose
 
 # Custom output directory and report name
-PYTHONPATH=src python -m csv_profiler.cli profile data/saudi_shopping_with_missing.csv \
+csv-profiler profile data/saudi_shopping_with_missing.csv \
   --out-dir my_reports \
   --report-name analysis
 ```
@@ -81,7 +92,8 @@ PYTHONPATH=src python -m csv_profiler.cli profile data/saudi_shopping_with_missi
 ### GUI (Streamlit)
 
 ```bash
-PYTHONPATH=src streamlit run app.py
+cd csv-profiler
+streamlit run app.py
 ```
 
 Opens web interface at `http://localhost:8501`

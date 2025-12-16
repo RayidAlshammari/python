@@ -106,4 +106,5 @@ Opens web interface at `http://localhost:8501`
 ---
 
 **Author:** SDAIA Academy Bootcamp Student : Rayid Alshammari
+
 **Project:** Week 1 Project

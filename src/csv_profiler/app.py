@@ -6,7 +6,7 @@ from pathlib import Path
 
 def main():
     """Launch Streamlit app."""
-    app_path = Path(__file__).parent.parent.parent / "app.py"
+    app_path = Path(__file__).parent / "streamlit_app.py"
     sys.exit(subprocess.call(["streamlit", "run", str(app_path)]))
 
 

@@ -15,6 +15,7 @@ dependencies = [
 
 [project.scripts]
 csv-profiler = "csv_profiler.cli:main"
+csv-profiler-app = "csv_profiler.app:main"
 
 [project.optional-dependencies]
 dev = [
